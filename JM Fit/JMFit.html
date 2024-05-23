@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JMFit - Tu Tienda de Ropa Deportiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="Estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/sports-cliffs-paragliding.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+        .img-fluid {
+            border: 2px solid #d4d4d4; 
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-warning">JM</span>Fit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="document.getElementById('SobreNosotros').scrollIntoView({behavior: 'smooth'})">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="document.getElementById('Unisex').scrollIntoView({behavior: 'smooth'})">Ropa Unisex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="document.getElementById('Adidas').scrollIntoView({behavior: 'smooth'})">Adidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="bi bi-cart"></i>Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="custom-card mb-3" id="SobreNosotros">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/28670c075ce60652dbbd65fc39336180.jpg" class="custom-img" alt="SobreNosotros">
+                </div>
+                <div class="col-md-8">
+                    <div class="custom-card-body">
+                        <h2>JM-Fit
+                        Tu Tienda de Ropa Deportiva<br></h2>
+                        <p>Bienvenidos a JM-Fit.
+                            En JMFit, entendemos que el deporte es más que una actividad física; es una forma de vida.
+                            <br><br>¿Qué Ofrecemos?
+                            <br><br>proporcionarte la mejor ropa deportiva que no solo te haga lucir bien, sino que también te haga sentir bien. Desde principiantes hasta atletas experimentados, en JMFit encontrarás todo lo que necesitas para alcanzar tus metas de fitness.
+                            <br><br>Explora Nuestra Colección y descubre ropa de entrenamiento, casual deportiva, calzado y accesorios diseñados con la más alta calidad y tecnología.
+                            <br><br> Cada prenda ha sido creada para ofrecerte el máximo rendimiento y confort, permitiéndote concentrarte en lo que realmente importa: dar lo mejor de ti en cada entrenamiento.
+                        </p>
+                        <a class="btn btn-warning" href="Contacto.html">Contáctenos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <section class="services section-padding" id="Unisex">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2 style="color: aliceblue;">Ropa Unisex</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Nike Strike</h3>
+                            <img src="img/nike 1.webp" alt="Nike" width="350">
+                            <p class="lead"> Polera de Entrenamiento de Fútbol DriFIT de medio cierre para Hombre                                       
+                                Descripcion: La playera Strike está diseñada con detalles pensados específicamente para las futuras estrellas del fútbol.
+                                $64.990
+                            </p>
+                            <a class="btn btn-warning text-dark" href="https://www.nike.cl/fn2403-011-nike-strike/p">Mas Informacion</a>
+                            <button class="btn btn-success text-dark" onclick="addToCart('Nike Strike', 64.990)">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Nike Club+</h3>
+                            <img src="img/nike 2.webp" alt="Nike2" width="345">
+                            <p class="lead">Short para Hombre $52.990 Perfectos para hacer de todo bajo el sol, estos shorts de tejido Woven sencillos tienen un diseño de bloques de colores con un acabado arrugado que aporta textura adicional y un look nostálgico.
+                            </p>
+                            <a class="btn btn-warning text-dark" href="https://www.nike.cl/fb7811-010-nike-club/p">Mas Informacion</a>
+                            <button class="btn btn-success text-dark" onclick="addToCart('Nike Club+', 52.990)">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Nike Unlimited</h3>
+                            <img src="img/nike 3.jpg" alt="Nike3" width="300">
+                            <p class="lead">Chaqueta versátil Repel con gorro para hombre
+                                $102.990 Diseñada para correr, entrenar y hacer yoga, la colección Unlimited te prepara para el éxito mientras te enfrentas al entrenamiento de hoy. Cuando la lluvia llega, la cubierta duradera y repelente al agua te brinda cobertura.
+                            </p>
+                            <a class="btn btn-warning text-dark" href="https://www.nike.cl/fb8558-010-nike-unlimited/p">Mas Informacion</a>
+                            <button class="btn btn-success text-dark" onclick="addToCart('Nike Unlimited', 102.990)">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+	<section class="portfolio section-padding" id="Adidas">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2 style="color: aliceblue;">Adidas</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="img-fluid" class="img-fluid" src="img/adidas 1.jpg" width="350"></div>
+							<h3 class="card-title">Mujer • Training</h3>
+							<p class="lead"> POLERA SIN MANGAS POWER AEROREADY $42.990 La fuerza física y la mental van de la mano. Puedes mejorar ambas con esta polera sin mangas de entrenamiento adidas.</p>
+							<a class="btn btn-warning text-dark" href="https://www.adidas.cl/polera-sin-mangas-power-aeroready/IM2696.html?pr=product_rr&slot=1&rec=ds">Mas Informacion</a>
+							<button class="btn btn-success text-dark" onclick="addToCart('POWER AEROREADY', 42.990)">Añadir al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="Adidas2" class="img-fluid" src="img/adidas 2.jpg" ></div>
+							<h3 class="card-title">Mujer • Running</h3>
+							<p class="lead">CALZAS CORTAS ADIZERO CONTROL RUNNING $99.990 En el camino hacia la victoria no hay lugar para las distracciones. Por eso estas calzas cortas de running adidas están pensadas para reducir las molestias.</p>
+							<a class="btn btn-warning text-dark" href="//www.adidas.cl/calzas-cortas-adizero-control-running-/IM4162.html">Mas Informacion</a>
+                            <button class="btn btn-success text-dark" onclick="addToCart(' ADIZERO CONTROL RUNNING', 99.990)">Añadir al Carrito</button>
+                        </div>
+                        
+
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="Adidas3" class="img-fluid" src="img/adidas  3.jpg"></div>
+							<h3 class="card-title">Mujer • Training</h3>
+							<p class="lead">CALZAS DE MALLA OPTIME LARGO COMPLETO $54.990 Enfréntate a los ejercicios más intensos sin distracciones con estas calzas de entrenamiento adidas. El tejido Adimove ultraelástico te permite moverte con total libertad para que puedas hacer sentadillas y correr más rápido.</p>
+							<a class="btn btn-warning text-dark" href="https://www.adidas.cl/calzas-de-malla-optime-largo-completo/IN9453.html">Mas Informacion</a>
+							<button class="btn btn-success text-dark" onclick="addToCart('MALLA OPTIME LARGO COMPLETO', 54.990 )">Añadir al Carrito</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  
+	<section class="team section-padding" id="Extras">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2 style="color: aliceblue;">Extras</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="Img_3348-scaled" class="img-fluid rounded-circle" src="img/extra 1.jpg">
+							<h3 class="card-title py-2">Mujer • Training</h3>
+							<p class="card-text">MALETA DEPORTIVA DE YOGA $44.990 Ligera y funcional, esta maleta deportiva adidas es la compañera ideal para tus clases de yoga.</p>
+							<a class="btn btn-warning text-dark" href="https://www.adidas.cl/maleta-deportiva-de-yoga/IP6418.html?pr=pdpctl_rr&slot=4&rec=ds%3FforceSelSize%3DTALLA%20%C3%9ANICA							">Mas Informacion</a>
+							<button class="btn btn-success text-dark" onclick="addToCart('MALETA DEPORTIVA DE YOGA', 44.990 )">Añadir al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="images" class="img-fluid rounded-circle" src="img/extra 2.jpg">
+							<h3 class="card-title py-2">Nike Victori One</h3>
+							<p class="card-text">Sandalias para Hombre $36.990 COMODIDAD DE HERENCIA, REMASTERIZADA.Desde la playa hasta las gradas.</p>
+							<a class="btn btn-warning text-dark" href="https://www.nike.cl/cn9678-601-nike-victori-one/p">Mas Informacion</a>
+							<button class="btn btn-success text-dark" onclick="addToCart('Nike Victori One', 36.990 )">Añadir al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="extra3" class="img-fluid rounded-circle" src="img/extra 3.jpg">
+							<h3 class="card-title py-2">GUANTES PUMA</h3>
+							<p class="card-text">GUANTES A$AP ROCKY X PUMA XL $64.990 Estos son los únicos guantes de conducción que necesitarás. Inspirados en los guantes de competición.</p>
+							<a class="btn btn-warning text-dark" href="https://cl.puma.com/guantes-a-ap-rocky-x-puma-xl-054790-01.html?_sgm_campaign=scn_88524d6cee000&_sgm_source=054790_01&_sgm_action=click&size=l/xl
+							">Mas Informacion</a>
+							<button class="btn btn-success text-dark" onclick="addToCart('GUANTES A$AP ROCKY X PUMA XL', 64.990 )">Añadir al Carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="ojos2" class="img-fluid rounded-circle" src="img/extra 4.jpg">
+							<h3 class="card-title py-2">ZAPATOS DE FÚTBOL</h3>
+							<p class="card-text">
+								ZAPATOS DE FÚTBOL FUTURE 7 MATCH FG/AG $79.990 Estrategas del fútbol, entren de lleno en el FUTURO La parte superior rediseñada.</p>
+							<a class="btn btn-warning text-dark" href=" https://cl.puma.com/zapatos-de-futbol-future-7-match-fg-ag-107715-03.html?_sgm_campaign=scn_88524d6cee000&_sgm_source=107715_03&_sgm_action=click">Mas Informacion</a>
+							<button class="btn btn-success text-dark" onclick="addToCart('ZAPATOS DE FÚTBOL FUTURE 7 MATCH FG/AG', 79.990  )">Añadir al Carrito</button>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="custom-card mb-3" id="SobreNosotros">
+			<div class="row g-0">
+				<div class="col-md-4">
+					<img src="img/Captura-Photoroom.png-Photoroom.png" class="custom-img" alt="SobreNosotros">
+				</div>
+				<div class="col-md-8">
+					<div class="custom-card-body">
+						<h2>Sobre Nosotros<br></h2>
+						<p>Bienvenidos a JMFit.
+							<br><br>En JMFit, entendemos que el deporte es más que una actividad física; es una forma de vida. Nuestra misión es proporcionarte la mejor ropa deportiva que no solo te haga lucir bien, sino que también te haga sentir bien. Desde principiantes hasta atletas experimentados, en JMFit encontrarás todo lo que necesitas para alcanzar tus metas de fitness.
+							<br><br>¿Por Qué Elegir JMFit?
+							<br><br>Calidad Superior: Usamos materiales de alta calidad para garantizar durabilidad y comodidad.
+							<br><br>Innovación: Diseños modernos y tecnología avanzada para mejorar tu rendimiento.
+							<br><br>Estilo: Ropa deportiva que combina funcionalidad y moda, para que siempre luzcas increíble.
+							<br><br>Sostenibilidad: Comprometidos con el medio ambiente, adoptamos prácticas sostenibles en la fabricación de nuestros productos.
+							<br><br>Nuestro Equipo
+							<br><br>Nuestro equipo está compuesto por profesionales apasionados del deporte y la moda, cada uno trayendo su experiencia única para crear productos excepcionales. Desde diseñadores y desarrolladores de productos hasta nuestro equipo de atención al cliente, todos en JMFit compartimos el compromiso de ayudarte a alcanzar tus objetivos de fitness.
+							<br><br>Únete a Nosotros
+							<br><br>En JMFit, no solo vendemos ropa deportiva; creamos experiencias y construimos una comunidad. Únete a nosotros en nuestro viaje para inspirar y ser inspirados, y descubre cómo JMFit puede transformar tu experiencia de fitness.
+						</p>
+						<a class="btn btn-warning" href="Contacto.html">Contáctenos</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartItems">
+                            
+                        </tbody>
+                    </table>
+                    <h5 class="text-end">Total: $<span id="cartTotal">0</span></h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script>
+        let cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ productName, price });
+            renderCart();
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price;
+                const row = `<tr><td>${item.productName}</td><td>${item.price}</td></tr>`;
+                cartItems.innerHTML += row;
+            });
+
+            cartTotal.innerText = total;
+        }
+    </script>
+
+
+
+<footer class="bg-dark p-2 text-center">
+	<div class="container">
+		<p class="text-white">Todos Los Derechos Reservados </p>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
+
